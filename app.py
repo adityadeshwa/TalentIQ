@@ -21,7 +21,6 @@ st.set_page_config(
 # =========================================================
 # MYSQL CONNECTION
 # =========================================================
-
 def get_db_connection():
     return mysql.connector.connect(
         host=st.secrets["mysql"]["host"],
@@ -29,6 +28,7 @@ def get_db_connection():
         user=st.secrets["mysql"]["user"],
         password=st.secrets["mysql"]["password"],
         database=st.secrets["mysql"]["database"],
+        ssl_ca="/etc/ssl/certs/ca-certificates.crt",
         ssl_verify_cert=True,
         ssl_verify_identity=True
     )
