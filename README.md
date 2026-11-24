@@ -1,7 +1,8 @@
+# TalentIQ – AI Recruitment Platform
 
-# TalentIQ – AI Resume Screening Platform
+🚀 **Live Demo:** https://talentiq-9t9r5kxpf4sjm8kmbgyc3e.streamlit.app/
 
-TalentIQ is a Python-based resume screening platform that helps recruiters analyze resumes against job descriptions using NLP and semantic similarity.
+TalentIQ is a Python-based AI resume screening platform that helps recruiters analyze resumes against job descriptions using NLP and semantic similarity.
 
 ## Features
 
@@ -20,7 +21,7 @@ TalentIQ is a Python-based resume screening platform that helps recruiters analy
 
 - Python
 - Streamlit
-- MySQL
+- MySQL (TiDB Cloud)
 - Pandas
 - NumPy
 - Sentence Transformers
@@ -32,14 +33,14 @@ TalentIQ is a Python-based resume screening platform that helps recruiters analy
 Install the required packages:
 
 ```bash
-pip install streamlit pandas numpy mysql-connector-python sentence-transformers pypdf
+pip install -r requirements.txt
 ```
 
 ## Database Setup
 
-1. Start MySQL Server.
-2. Create a database named `talentiq`.
-3. Configure database credentials in `.streamlit/secrets.toml`.
+1. Create a MySQL-compatible database named `talentiq`.
+2. Configure database credentials in `.streamlit/secrets.toml`.
+3. Create the required database tables.
 
 ## Run the Application
 
@@ -47,18 +48,6 @@ pip install streamlit pandas numpy mysql-connector-python sentence-transformers 
 python -m streamlit run app.py
 ```
 
-## Project Structure
-
-```text
-resume matcher/
-│
-├── app.py
-├── matcher.py
-├── README.md
-└── .streamlit/
-    └── secrets.toml
-```
-
 ## Important Note
 
-Match scores are screening indicators, not hiring probabilities. Final recruitment decisions require human review.
+Match scores are screening indicators, not hiring probabilities. Bias Audit is preliminary and does not guarantee fairness. Final recruitment decisions require human review.
