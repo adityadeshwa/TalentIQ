@@ -1,0 +1,18 @@
+# Secrets
+.streamlit/secrets.toml
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE files
+.vscode/
+
+# Temporary files
+*.log
+.DS_Store
+TalentIQ_Backup/
