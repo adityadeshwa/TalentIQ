@@ -51,3 +51,14 @@ python -m streamlit run app.py
 ## Important Note
 
 Match scores are screening indicators, not hiring probabilities. Bias Audit is preliminary and does not guarantee fairness. Final recruitment decisions require human review.
+
+## Project Screenshots
+
+### Recruitment Dashboard
+![Recruitment Dashboard](Screenshot%202026-11-24%20140631.png)
+
+### Resume Matcher
+![Resume Matcher](Screenshot%202026-11-24%20140712.png)
+
+### Candidate Management
+![Candidate Management](Screenshot%202026-11-24%20140737.png)
